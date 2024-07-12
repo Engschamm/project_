@@ -12,9 +12,9 @@ public class gameManager {
     public gameManager() {
         this.danhSachNhanVat = new ArrayList<>();
         this.danhSachVuKhi = new ArrayList<>();
-        // Thêm vũ khí mẫu
-        danhSachVuKhi.add(new CungTen("Cung tên", 100, 100, 1.5));
-        danhSachVuKhi.add(new Choi("Chổi Ma Thuật", 60, 100, 2.0));
+        // Thêm vũ khí nguyên bản
+        danhSachVuKhi.add(new CungTen("Cung tên cơ bản", 100, 100, 1.5));
+        danhSachVuKhi.add(new Choi("Chổi cơ bản", 60, 100, 2.0));
     }
 
     public void menuChinh() {
@@ -26,6 +26,7 @@ public class gameManager {
             System.out.println("|1. Quản Lý Nhân Vật   |");
             System.out.println("|2. Quản Lý Vũ Khí     |");
             System.out.println("|3. Thoát              |");
+            System.out.println("|----------------------|");
             System.out.print("Chọn một tùy chọn: ");
 
             int choice = scanner.nextInt();
@@ -53,12 +54,13 @@ public class gameManager {
         boolean running = true;
 
         while (running) {
-            System.out.println("\n--- Quản Lý Nhân Vật ---");
-            System.out.println("Bạn muốn chọn nhân vật nào?");
-            System.out.println("1. Binh Đoàn - Kỵ Binh");
-            System.out.println("2. Tự Do - Phù Thủy");
-            System.out.println("3. Hiển Thị Danh Sách Nhân Vật");
-            System.out.println("4. Thoát");
+            System.out.println("|------ QUẢN LÝ NHÂN VẬT ------|");
+            System.out.println("|Bạn muốn chọn nhân vật nào?   |");
+            System.out.println("|1. Binh Đoàn - Kỵ Binh        |");
+            System.out.println("|2. Tự Do - Phù Thủy           |");
+            System.out.println("|3. Hiển Thị Danh Sách Nhân Vật|");
+            System.out.println("|4. Thoát                      |");
+            System.out.println("|------------------------------|");
             System.out.print("Chọn một tùy chọn: ");
 
             int choice = scanner.nextInt();
@@ -87,10 +89,11 @@ public class gameManager {
         boolean running = true;
 
         while (running) {
-            System.out.println("\n--- Quản Lý Vũ Khí ---");
-            System.out.println("1. Hiển Thị Danh Sách Vũ Khí");
-            System.out.println("2. Thêm Vũ Khí Mới");
-            System.out.println("3. Thoát");
+            System.out.println("|------ QUẢN LÝ VŨ KHÍ ------|");
+            System.out.println("|1. Hiển Thị Danh Sách Vũ Khí|");
+            System.out.println("|2. Thêm Vũ Khí Mới          |");
+            System.out.println("|3. Thoát                    |");
+            System.out.println("|----------------------------|");
             System.out.print("Chọn một tùy chọn: ");
 
             int choice = scanner.nextInt();
