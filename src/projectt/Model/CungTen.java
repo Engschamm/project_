@@ -8,8 +8,21 @@ public class CungTen extends VuKhi {
         this.tamBan = tamBan;
     }
 
+    public double getTamBan() {
+        return tamBan;
+    }
+
+    public void setTamBan(double tamBan) {
+        this.tamBan = tamBan;
+    }
+
     @Override
     public int sucManh() {
         return (int) (getSatThuong() * tamBan);
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + ", Tầm Bắn: " + tamBan;
     }
 }

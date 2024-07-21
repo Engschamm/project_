@@ -8,6 +8,14 @@ public class PhuThuy extends NhanVat implements DiChuyen {
         this.phepThuat = phepThuat;
     }
 
+    public String getPhepThuat() {
+        return phepThuat;
+    }
+
+    public void setPhepThuat(String phepThuat) {
+        this.phepThuat = phepThuat;
+    }
+
     @Override
     public void hanhDong() {
         System.out.println(getTen() + " thực hiện phép thuật " + phepThuat + "!");

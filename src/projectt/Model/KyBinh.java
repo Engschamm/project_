@@ -8,6 +8,14 @@ public class KyBinh extends NhanVat {
         this.kinhNghiem = kinhNghiem;
     }
 
+    public String getKinhNghiem() {
+        return kinhNghiem;
+    }
+
+    public void setKinhNghiem(String kinhNghiem) {
+        this.kinhNghiem = kinhNghiem;
+    }
+
     @Override
     public void hanhDong() {
         System.out.println(getTen() + " chiến đấu với kinh nghiệm " + kinhNghiem + "!");
@@ -16,5 +24,10 @@ public class KyBinh extends NhanVat {
     @Override
     public int sucManh() {
         return (int) getNangLuong(); // Example strength calculation
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + ", Kinh Nghiệm: " + kinhNghiem;
     }
 }

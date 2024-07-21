@@ -18,6 +18,11 @@ public abstract class VuKhi {
     public int getSoLuong() { return soLuong; }
     public String getLoaiVuKhi() { return loaiVuKhi; }
 
+    public void setTen(String ten) { this.ten = ten; }
+    public void setSatThuong(int satThuong) { this.satThuong = satThuong; }
+    public void setSoLuong(int soLuong) { this.soLuong = soLuong; }
+    public void setLoaiVuKhi(String loaiVuKhi) { this.loaiVuKhi = loaiVuKhi; }
+
     public void tangSoLuong(int soLuong) {
         this.soLuong += soLuong;
     }
